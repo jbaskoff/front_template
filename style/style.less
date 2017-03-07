@@ -45,9 +45,13 @@ img{
 .clearfix:after {
   clear:both;
 }
+/****my clear****/ 
 button{
 	cursor: pointer;
 	border: none;
+}
+*:focus, textarea:focus, input:focus{
+    outline: none;
 }
 /** 
 *placeholder color
@@ -119,10 +123,10 @@ button{
     background: url(@imgPath) @posX @posY no-repeat;
   }
 }
-.trans(@option:all,@time:0.3s){
-  -moz-transition: @option @time ease-in-out;
-  -webkit-transition: @option @time ease-in-out; 
-  transition: @option @time ease-in-out;
+.trans(@option:all,@time:0.3s,@type:ease-in-out){
+  -moz-transition: @option @time @type;
+  -webkit-transition: @option @time @type; 
+  transition: @option @time @type;
 }
 .rotate(@deg){
   transform: rotate(@deg) ;
@@ -163,15 +167,15 @@ button{
 }
 .inner_shadow(){
   -webkit-box-shadow: inset 0px 0px 6px 4px rgba(230,230,230,0.91);
-  -moz-box-shadow: inset 0px 0px 6px 4px rgba(230,230,230,0.91);
-  box-shadow: inset 0px 0px 6px 4px rgba(230,230,230,0.91);
+     -moz-box-shadow: inset 0px 0px 6px 4px rgba(230,230,230,0.91);
+          box-shadow: inset 0px 0px 6px 4px rgba(230,230,230,0.91);
 }
 .transform-translateX(@duration){
-  -moz-transform: translateX(@duration);
-  -ms-transform: translateX(@duration); 
   -webkit-transform: translateX(@duration); 
-  -o-transform: translateX(@duration); 
-  transform: translateX(@duration);
+     -moz-transform: translateX(@duration);
+      -ms-transform: translateX(@duration);   
+       -o-transform: translateX(@duration); 
+          transform: translateX(@duration);
 }
 @font-face {
   font-family: 'Calibri';
@@ -218,9 +222,9 @@ button{
   font-weight: normal;
   font-style: italic;
 }
-@red: #b11907;
-@blue: #0b83a6;
-@grey: #9a9a9a;
+@black: #000;
+@white: #fff;
+@grey: #ccc;
 
 
 
