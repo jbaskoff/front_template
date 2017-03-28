@@ -31,7 +31,7 @@ function tubsInitialization(tabsWrapId) {
 
 
 
-$(function(e) {
+$(function() {
 	tubsInitialization("tabs-wrap");
 	tubsInitialization("tabs-wrap1");
 })

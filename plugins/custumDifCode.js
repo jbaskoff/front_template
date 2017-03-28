@@ -9,23 +9,30 @@ $(document).mouseup(function (event){ // событие клика по веб-�
 
 // click 
 $(function(e) {
+
+// плавна зміна картинки
+
 	$('.img_bus_single img').click(function(e) {
-		 $(this).closest('.photos_wrap').find('.big_foto img').attr('src', $(this).data('imglink'));
-	})
+		var bigImage = $(this).closest('.photos_wrap').find('.big_foto img');
+		 if (bigImage.attr('src') ==  $(this).data('imglink')) return;
+		 bigImage.hide();
+		 bigImage.attr('src', $(this).data('imglink'));
+		 bigImage.fadeIn();
+	});
+
 	$('.big_foto').click(function(){
-		var arr_photos = [];
-		var firstImage = $(this).find('img').attr('src');
-		arr_photos.push(firstImage);
+		var arr_images = [];
+		var firstImageLink = $(this).find('img').attr('src');
+		arr_images.push(firstImageLink);
 		$(this).closest('.photos_wrap').find('.img_bus_single').each(function(e) {
-			var imgBigLink =  $(this).find('img').data('imglink')
-			if(imgBigLink != firstImage)
-				arr_photos.push(imgBigLink);
+			var imgLink =  $(this).find('img').data('imglink')
+			if(imgLink != firstImageLink)
+				arr_images.push(imgLink);
 		});
-		$.fancybox.open(arr_photos, {
+		$.fancybox.open(arr_images, {
 										padding:0,
 										margin:[0,15,0,15],
 										scrolling:'visible'
 									});
-
-	});
+	})
 
