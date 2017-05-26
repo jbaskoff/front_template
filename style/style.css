@@ -1,1 +1,102 @@
-*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;-webkit-text-stroke:.1px}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}img{max-width:100%}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}button{cursor:pointer;border:none}:focus,input:focus,textarea:focus{outline:0}::-webkit-input-placeholder{color:#7a7a7a}::-moz-placeholder{color:#7a7a7a}:-moz-placeholder{color:#7a7a7a}:-ms-input-placeholder{color:#7a7a7a}.rotate180{transform:rotate(-180deg);-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-o-transform:rotate(-180deg);-ms-transform:rotate(-180deg)}.show{display:block}.hidden{display:none}@font-face{font-family:Calibri;src:url(../fonts/Calibri/Calibri.eot);src:url(../fonts/Calibri/Calibri.eot?#iefix) format('embedded-opentype'),url(../fonts/Calibri/Calibri.woff) format('woff'),url(../fonts/Calibri/Calibri.ttf) format('truetype'),url(../fonts/Calibri/Calibri.svg#CConv_Calibr) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Calibri_Bold;src:url(../fonts/Calibri-Bold/Calibri-Bold.eot);src:url(../fonts/Calibri-Bold/Calibri-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Calibri-Bold/Calibri-Bold.woff) format('woff'),url(../fonts/Calibri-Bold/Calibri-Bold.ttf) format('truetype'),url(../fonts/Calibri-Bold/Calibri-Bold.svg#Conv_Calibri_Bold) format('svg');font-weight:700;font-style:normal}@font-face{font-family:Calibri_Italic;src:url(../fonts/Calibri-Italic/Calibri-Italic.eot);src:url(../fonts/Calibri-Italic/Calibri-Italic.eot?#iefix) format('embedded-opentype'),url(../fonts/Calibri-Italic/Calibri-Italic.woff) format('woff'),url(../fonts/Calibri-Italic/Calibri-Italic.ttf) format('truetype'),url(../fonts/Calibri-Italic/Calibri-Italic.svg#Calibri_Italic) format('svg');font-weight:400;font-style:italic}.cali{font-family:Calibri;font-weight:400;font-style:normal}.cali_b{font-family:Calibri_Bold;font-weight:700;font-style:normal}.cali_i{font-family:Calibri_Italic;font-weight:400;font-style:italic}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/****my clear****/
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+*:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+/**
+*placeholder color
+**/
+::-webkit-input-placeholder {
+  color: #7a7a7a;
+}
+::-moz-placeholder {
+  color: #7a7a7a;
+}
+:-moz-placeholder {
+  color: #7a7a7a;
+}
+:-ms-input-placeholder {
+  color: #7a7a7a;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri/Calibri.eot');
+  src: url('../fonts/Calibri/Calibri.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri/Calibri.woff') format('woff'), url('../fonts/Calibri/Calibri.ttf') format('truetype'), url('../fonts/Calibri/Calibri.svg#CConv_Calibr') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri_Bold';
+  src: url('../fonts/Calibri-Bold/Calibri-Bold.eot');
+  src: url('../fonts/Calibri-Bold/Calibri-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Bold/Calibri-Bold.woff') format('woff'), url('../fonts/Calibri-Bold/Calibri-Bold.ttf') format('truetype'), url('../fonts/Calibri-Bold/Calibri-Bold.svg#Conv_Calibri_Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri_Italic';
+  src: url('../fonts/Calibri-Italic/Calibri-Italic.eot');
+  src: url('../fonts/Calibri-Italic/Calibri-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Italic/Calibri-Italic.woff') format('woff'), url('../fonts/Calibri-Italic/Calibri-Italic.ttf') format('truetype'), url('../fonts/Calibri-Italic/Calibri-Italic.svg#Calibri_Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
